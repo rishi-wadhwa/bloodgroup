@@ -1,0 +1,652 @@
+﻿
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>MY BLOOD BANK</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Bootsrap -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap.min.css')}}">
+
+        <!-- Font awesome -->
+		<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/font-awesome.min.css')}}">
+
+
+        <!-- Owl carousel -->
+         <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/owl.carousel.css')}}">
+		 
+        <!-- Template main Css -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+        
+        <!-- Modernizr -->
+        <script src="{{ url_for('static',filename='assets/js/modernizr-2.6.2.min.js')}}"></script>
+
+
+    </head>
+
+    <body>
+
+
+    <header class="main-header">
+        
+    
+        <nav class="navbar navbar-static-top">
+
+            <div class="navbar-top">
+
+              <div class="container">
+                  <div class="row">
+
+                    <div class="col-sm-6 col-xs-12">
+
+                        <ul class="list-unstyled list-inline header-contact">
+                            <li> <i class="fa fa-phone"></i> <a href="tel:">+212 658 986 213 </a> </li>
+                             <li> <i class="fa fa-envelope"></i> <a href="mailto:contact@mybloodbank.org">contact@mybloodbank.org</a> </li>
+                       </ul> <!-- /.header-contact  -->
+                      
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 text-right">
+
+                        <ul class="list-unstyled list-inline header-social">
+
+                            <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-twitter"></i>  </a> </li>
+                            <li> <a href="#"> <i class="fa fa-google"></i>  </a> </li>
+                            <li> <a href="#"> <i class="fa fa-youtube"></i>  </a> </li>
+                            <li> <a href="#"> <i class="fa fa fa-pinterest-p"></i>  </a> </li>
+                       </ul> <!-- /.header-social  -->
+                      
+                    </div>
+
+
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="navbar-main">
+              
+              <div class="container">
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                  </button>
+                  
+                   <a class="navbar-brand" href="/index"> <img src="{{ url_for('static',filename='assets/images/logo.png')}}" alt="" width="70" height="40"></a>
+                  
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse pull-right">
+
+                  <ul class="nav navbar-nav">
+
+                    <li><a class="is-active" href="index.html">HOME</a></li>
+                     <li><a href="/about">ABOUT</a></li>
+					 <li><a href="/login">LOGIN</a></li>
+                     <li class="has-child"><a href="/login">DONATE</a>
+
+                      <ul class="submenu">
+                         <li class="submenu-item"><a href="/add">Register </a></li>
+                          <li class="submenu-item"><a href="/centers"> Centers</a></li>
+                         <li class="submenu-item"><a href="/stocks">Stock </a></li>
+                         <li class="submenu-item"><a href="/viewm">Request Blood </a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/gallery">GALLERY</a></li>
+					<li><a href="/contact">CONTACT</a></li>
+                  </ul>
+
+                </div> <!-- /#navbar -->
+
+              </div> <!-- /.container -->
+              
+            </div> <!-- /.navbar-main -->
+
+
+        </nav> 
+
+    </header> <!-- /. main-header -->
+
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+
+              <img src="{{ url_for('static',filename='assets/images/slider/1.png')}}" alt="">
+
+              <div class="container">
+
+                <div class="carousel-caption">
+
+                  <h2 class="carousel-title bounceInDown animated slow">Come forward to donate blood</h2>
+                  <h4 class="carousel-subtitle bounceInUp animated slow ">It can save millions of lives</h4>
+                  <h4 class="carousel-subtitle bounceInUp animated slow "><a href="#s" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">REGISTER  NOW</a>                  </h4>
+                </div> <!-- /.carousel-caption -->
+
+              </div>
+
+            </div> <!-- /.item -->
+
+
+            <div class="item ">
+
+              <img src="{{ url_for('static',filename='assets/images/slider/2.png')}}" alt="">
+
+              <div class="container">
+
+                <div class="carousel-caption">
+
+                  <h2 class="carousel-title bounceInDown animated slow">Together we can improve their lives</h2>
+                  <h4 class="carousel-subtitle bounceInUp animated slow"> So let's do it !</h4>
+                  <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated" data-toggle="modal" data-target="#donateModal">REGISTER NOW</a>
+
+                </div> <!-- /.carousel-caption -->
+
+              </div>
+
+            </div> <!-- /.item -->
+
+
+
+
+            <div class="item ">
+
+              <img src="{{ url_for('static',filename='assets/images/slider/3.png')}}" alt="">
+
+              <div class="container">
+
+                <div class="carousel-caption">
+
+                  <h2 class="carousel-title bounceInDown animated slow" >The blood you donate gives someone another chance of life.</h2>
+                  <h4 class="carousel-subtitle bounceInUp animated slow"> Give the gift of life. Donate Blood!</h4>
+                  <a href="#" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow" data-toggle="modal" data-target="#donateModal">REGISTER NOW</a>
+
+                </div> <!-- /.carousel-caption -->
+
+              </div>
+
+            </div> <!-- /.item -->
+
+          </div>
+
+          <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+    </div><!-- /.carousel -->
+
+    <div class="section-home about-us fadeIn animated">
+
+        <div class="container">
+
+            <div class="row" >
+
+                <div  style="color:red" class="col-md-3 col-sm-6">
+                
+                  <div class="about-us-col" >
+
+                        <div class="col-icon-wrapper" >
+                          <img src="{{ url_for('static',filename='assets/images/icons/our-mission-icon.png')}}" alt="">
+                        </div>
+                        <h3 class="col-title">our mission</h3>
+                        <div class="col-details" >
+
+                          <p>We aim at bringing everyone together to contribute their hand to fulfill the need of blood for the patients. Also maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better way.</p>
+                          
+                        </div>
+                        
+                    
+                  </div>
+                  
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+                
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src="{{ url_for('static',filename='assets/images/icons/make-donation-icon.png')}}" alt="">
+                        </div>
+                        <h3 class="col-title">Make donations</h3>
+                        <div class="col-details">
+
+                          <p>Donate Blood by simply registering yourself and filling your blood and contact details to fix an appointment in our blood bank nearest to you.</p>
+                          
+                        </div>
+                        
+                    
+                  </div>
+                  
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+                
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src= "{{ url_for('static',filename='assets/images/icons/help-icon.png')}}" alt="">
+                        </div>
+                        <h3 class="col-title">Help & support</h3>
+                        <div class="col-details">
+
+                          <p>For any queries you may contact us at: <br>
+                             Telephone: +212 658 986 213 Or <br>
+                            Email us at: contact@mybloodbank.org </p>
+                          
+                        </div>
+                        
+                    
+                  </div>
+                  
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+                
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src= "{{ url_for('static',filename='assets/images/icons/programs-icon.png')}}" alt="">
+                        </div>
+                        <h3 class="col-title">our programs</h3>
+                        <div class="col-details">
+
+                          <p>We have several blood banks. You can simply register and walk-in our blood bank to donate or collect blood as required.</p>
+                          
+                        </div>
+                        
+                    
+                  </div>
+                  
+                </div>
+                
+
+                
+            </div>
+
+        </div>
+      
+    </div> <!-- /.about-us -->
+
+    <div class="section-home home-reasons">
+
+        <div class="container">
+
+            <div class="row">
+                
+                <div class="col-md-6">
+
+                    <div class="reasons-col animate-onscroll fadeIn">
+
+                        <img src= "{{ url_for('static',filename='assets/images/reasons/we-fight-togother.jpg')}}" alt="">
+
+                        <div class="reasons-titles">
+
+                            <h3 class="reasons-title">World Blood Donor Day:</h3>
+                            <h5 class="reason-subtitle"> What can you do? Give blood. Give now. Give often.</h5>
+                            
+                        </div>
+
+                        <div class="on-hover hidden-xs">
+                            
+                                
+<p><strong>This year, the World Health organisation (WHO) is emphasising on blood donation in emergencies. Because no-one knows when disaster will strike. But every disaster has victims, and many victims need blood.</strong> </p>
+     <p>New Delhi: Today, the 14th of June, is celebrated as World Blood Donor Day (WBDD) around the world each year. The event, established in 2004, serves to raise awareness of the need for safe blood and blood products, and to thank unpaid blood donors for their life-saving gifts of blood.</p>
+
+<p> This year, the campaign focuses on blood donation in crisis and emergencies.  </p>
+
+<p>Therefore, the slogan for the 2017 WBDD is: What can you do? With the secondary message: Give blood. Give now. Give often.</p>
+
+            
+					   </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="reasons-col animate-onscroll fadeIn">
+
+                        <img src="{{ url_for('static',filename='assets/images/reasons/we-care-about.jpg')}}" alt="">
+
+                        <div class="reasons-titles">
+
+                            <h3 class="reasons-title">World Blood Donor Day: Few things to keep in mind before donating blood</h3>
+                            <h5 class="reason-subtitle">Blood is an important resource, both for planned treatments and urgent interventions.</h5>
+                            
+                        </div>
+
+                        <div class="on-hover hidden-xs">
+                            
+
+<p>Blood is vital for treating the wounded during emergencies of all kinds (natural disasters, accidents, armed conflicts, etc.) and has an essential, life-saving role in maternal and perinatal care.</p>
+                      <p>Blood donation is completely a safe process. In fact, one donation can help save the lives of up to three people.</p>
+
+<p><strong>But despite there being no harmful or even profound effects of blood donation on the body, there are a few precautions you need to take before donating blood. These include:</strong></p>
+
+<p> 1. Drinking extra water and fluids.</p>
+<p> 2. Avoiding caffeinated beverages.</p>
+<p> 3. Eating well to reduce the risk of reactions.</p>
+<p> 4. Eating foods rich in iron is advisable.  </p>
+						</div>
+
+
+                    </div>
+                    
+                </div>
+
+
+            </div>
+          
+  
+
+        </div>
+      
+
+    </div> <!-- /.home-reasons -->
+
+   
+
+
+
+
+   
+    
+
+
+    <footer class="main-footer">
+
+        <div class="footer-top">
+            
+        </div>
+
+
+        <div class="footer-main">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">About us <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+
+                                <p><strong>My Blood Bank</strong> (MBB) provide you the access to any blood group required by the patients suffering from some disease or some accident. You can donate your blood to help the needies to recover soon simply by signing up and filling your details and your contact information. You can also get specific blood group if in stock. </p>
+                                <p> We aim at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better way. </p>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">The stories which will inspire you <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+                                <ul class="tweets list-unstyled">
+                                  <li class="tweet">Hi Friends!  I Am Ramesh and a B- Blood Donor. I Have Donated Blood Two Times.First Time in an Accident Case In Igmc Shimla And 2nd Time to a Thallessaemia patient.I Felt Proud To Help A Needy And Saved A Precious Life. So Dear Friends Share A Little, Care A Little – Donate Blood. </li>
+                                  <li class="tweet"> Hello, My Name Is Suresh Kumar. I Am Working As JBT At Sarkaghat, Mandi. I Am Regular And Volunteer Donor . I Have Donated Blood 59 Times And Committed That I Will Continue It Till My Last. It Gives Me Immense Pleasure And Self Satisfaction. Friends There Is No Substitute Of Blood Only Generous Donors Can Save A Needy Patients. </li>
+                                  <li class="tweet"> I Am An Educated Member Of Society And I Believe We All Should Donate Blood As Much We Can.So It Is My Request To All My Friends To Come Forward To Help Others And Trust Me There Is No Effect On Health .Even I'm Filled With Tremendous Amount Of Positivity As I Have Donated My Blood 16 Times And I Will Continue This Till My Last Breath. </li>
+                                  <li class="tweet"></li>
+
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">Contact us <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+
+                                <div class="footer-form">
+                                    
+                                    <div class="footer-form" >
+                                    
+                                    <form action="php/mail.php" class="ajax-form">
+
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                        </div>
+
+                                         <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                        </div>
+
+                                        <div class="form-group alerts">
+                        
+                                            <div class="alert alert-success" role="alert">
+                                              
+                                            </div>
+
+                                            <div class="alert alert-danger" role="alert">
+                                              
+                                            </div>
+                                            
+                                        </div>
+
+                                         <div class="form-group">
+                                            <button type="submit" class="btn btn-submit pull-right">Send message</button>
+                                        </div>
+                                        
+                                    </form>
+
+                                </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+
+
+
+                </div>
+                
+                
+            </div>
+
+            
+        </div>
+
+
+        
+    </footer> <!-- main-footer -->
+
+
+
+
+    <!-- Donate Modal -->
+    <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
+
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="donateModalLabel">DONATE NOW</h4>
+          </div>
+          <div class="modal-body">
+
+                <form class="form-donation">
+
+                        <h3 class="title-style-1 text-center">Sign Up To Donate <span class="title-under"></span>  </h3>
+
+                        
+
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="firstName" placeholder="First name*">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="lastName" placeholder="Last name*">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="email" placeholder="Email*">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" name="address" placeholder="Address">
+                            </div>
+
+                        </div>
+                         <div class="row">
+
+                            <div class="form-group col-md-12">
+                                <select class="form-control"  placeholder="Blood Group">
+								<option value="A+">A+</option>
+								<option value="A-">A-</option>
+								<option value="B+">B+</option>
+								<option value="B-">B-</option>
+								<option value="AB+">AB+</option>
+								<option value="AB-">AB-</option>
+								<option value="O+">O+</option>
+								<option value="O-">O-</option>
+								</select>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group col-md-12">
+                                <textarea cols="30" rows="4" class="form-control" name="note" placeholder="Additional note"></textarea>
+                            </div>
+
+                        </div>
+						
+
+                        <div class="row">
+
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" name="donateNow" >Sign Up</button>
+                            </div>
+
+                        </div>
+
+
+
+                       
+                    
+                </form>
+            
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /.modal -->
+
+
+
+
+
+    <!--  Scripts
+    ================================================== -->
+
+  <!-- jQuery -->
+       <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Bootsrap javascript file -->
+    <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js')}}"></script>
+    
+    <!-- owl carouseljavascript file -->
+    <script src= "{{ url_for('static',filename='assets/js/owl.carousel.min.js')}}"></script>
+
+    <!-- Template main javascript -->
+    <script src= "{{ url_for('static',filename='assets/js/main.js' )}}"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

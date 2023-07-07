@@ -1,0 +1,533 @@
+﻿
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Centers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+         <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+         <!-- Bootsrap -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap.min.css')}}">
+
+        <!-- Font awesome -->
+		<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/font-awesome.min.css')}}">
+
+
+        <!-- Owl carousel -->
+         <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/owl.carousel.css')}}">
+		 
+        <!-- Template main Css -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+        
+        <!-- Modernizr -->
+        <script src="{{ url_for('static',filename='assets/js/modernizr-2.6.2.min.js')}}"></script>
+
+
+
+    </head>
+    <body>
+    <!-- NAVBAR
+    ================================================== -->
+
+    <header class="main-header">
+        
+    
+        <nav class="navbar navbar-static-top">
+
+            <div class="navbar-top">
+
+              <div class="container">
+                  <div class="row">
+
+                    <div class="col-sm-6 col-xs-12">
+
+                         <ul class="list-unstyled list-inline header-contact">
+                            <li> <i class="fa fa-phone"></i> <a href="tel:">+212 658 986 213 </a> </li>
+                             <li> <i class="fa fa-envelope"></i> <a href="mailto:contact@mybloodbank.org">contact@mybloodbank.org</a> </li>
+                       </ul> <!-- /.header-contact  -->
+                      
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 text-right">
+
+                        <ul class="list-unstyled list-inline header-social">
+
+                            <li> <a href="#" target="_blank"> <i class="fa fa-facebook"></i> </a> </li>
+                            <li> <a href="#" target="_blank"> <i class="fa fa-twitter"></i>  </a> </li>
+                            <li> <a href="#" target="_blank"> <i class="fa fa-google"></i>  </a> </li>
+                            <li> <a href="#" target="_blank"> <i class="fa fa-youtube"></i>  </a> </li>
+                            <li> <a href="#" target="_blank"> <i class="fa fa fa-pinterest-p"></i>  </a> </li>
+
+                       </ul> <!-- /.header-social  -->
+                      
+                    </div>
+
+
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="navbar-main">
+              
+              <div class="container">
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                  </button>
+                  
+  <a class="navbar-brand" href="/index"> <img src="{{ url_for('static',filename='assets/images/logo.png')}}" alt="" width="70" height="40"></a>
+                             
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse pull-right">
+
+                  <ul class="nav navbar-nav">
+
+                    
+                      <li><a href="/index">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/login">LOGIN</a></li>
+                     <li class="has-child"><a href="/login">DONATE</a>
+
+                      <ul class="submenu">
+                         <li class="submenu-item"><a href="/add">Register </a></li>
+                          <li class="submenu-item"><a href="/centers"> Centers</a></li>
+                         <li class="submenu-item"><a href="/stocks">Stock </a></li>
+                         <li class="submenu-item"><a href="/viewm">Request Blood </a></li>
+                      </ul>
+                    
+                    </li>
+                    <li><a href="/gallery">GALLERY</a></li>
+					<li><a href="/contact">CONTACT</a></li>
+
+
+                  </ul>
+
+                </div> <!-- /#navbar -->
+
+              </div> <!-- /.container -->
+              
+            </div> <!-- /.navbar-main -->
+
+
+        </nav> 
+
+    </header> <!-- /. main-header -->
+
+
+	<div class="page-heading text-center">
+
+		<div class="container zoomIn animated">
+			
+			<h1 class="page-title">OUR CENTERS <span class="title-under"></span></h1>
+			<p class="page-description">
+				You can raise your potential, by helping someone to reach their potential.
+			</p>
+			
+		</div>
+
+	</div>
+
+	<div class="main-container">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 fadeIn animated">
+
+					<p>
+						Here, we have the list of all our blood banks:
+					</p>
+
+				</div>
+
+				
+
+				</div>
+
+			</div>
+
+			
+
+			<div class="row ">
+                <div class="col-md-12 fadeIn animate-onscroll">
+
+					<h2 class="title-style-2">Our centers <span class="title-under"></span></h2>
+					
+						
+					    <table class="table table-style-2">
+					      <thead>
+						  
+					        <tr>
+					          <th>Sr.No.</th>
+					          <th>City</th>
+					          <th>Phone number</th>
+					          <th>Helpline</th>
+							  <th>Address</th>
+					        </tr>
+					      </thead>
+					      <tbody>
+						  
+						  <tr>
+					          <th scope="row">1</th>
+					          <td>Chandigarh</td>
+					          <td>+0172-22256589</td>
+							  <td>45456770000</td>
+					          <td>My Blood Bank, Sector-12</td>
+					        </tr>
+							
+					        <tr>
+					          <th scope="row">2</th>
+					          <td>Chandigarh</td>
+					          <td>+91787866221</td>
+					          <td>222223333</td>
+							  <td>My Blood Bank, Sector=38-W</td>
+					        </tr>
+					        
+					        <tr>
+					          <th scope="row">3</th>
+					          <td>Zirakpur</td>
+					          <td>+917878676767</td>
+							  <td>2222233332</td>
+					          <td>My Blood Bank, VIP Road</td>
+					        </tr>
+							
+                            <tr>
+					        <th scope="row">4</th>
+					          <td>Mohali</td>
+					          <td>0172-8989898989</td>
+					          <td>2389898989</td>
+							  <td>My Blood Bank, Phase-10</td>
+					        </tr>
+							
+					          <tr>
+					          <th scope="row">5</th>
+					          <td>Panchkula</td>
+					          <td>+919455678909</td>
+					          <td>90906767676</td>
+							  <td>My Blood Bank, Sector-6</td>
+					        </tr>
+					        
+					        
+
+					      </tbody>
+					    </table>
+					
+				</div>
+				
+				<div class="col-md-12 fadeIn animate-onscroll">
+				
+				
+					<h2 class="title-style-2"> Have A Look Here <span class="title-under"></span></h2>
+
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Who can donate blood
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+						  
+						  <h3>Who can donate blood:</h3>
+                          <p><strong>Let others benefit from your good health. Do donate blood if ...</strong></p>
+
+             <ul style="margin:0 0 0 20px;font-family:Cambria;font-size:12px;">
+                <li>You are between age group of 18-65 years.</li>
+                <li>Your weight is 45 kgs or more.</li>
+                <li>Your haemoglobin is 12.5 gm% minimum.</li>
+                <li>Your last blood donation was 3 months earlier.</li>
+                <li>You are healthy and have not suffered from malaria, typhoid or other transmissible disease in the recent past.</li>
+            </ul>
+
+
+<p><strong>Do abide by our rules - be truthful about your health status!</strong></p>
+
+<p>We ensure the health of blood, before we take it, as well as after it is collected.</p>
+<ul style="margin:0 0 0 20px;font-family:Cambria;font-size:12px;">
+ <li>Firstly, the donor is expected to be honest about his or her health history and current condition. </li>
+<li> Secondly, collected blood is tested for venereal diseases, hepatitis B & C and AIDS. </li></ul>
+<p><strong>You have to be healthy to give 'safe blood'</strong></p>
+					       </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingTwo">
+					      <h4 class="panel-title">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Who can't donate 
+					        </a>
+					      </h4>
+					    </div>
+					    
+					      <div class="panel-body">
+						  <h3>Do not donate blood if you have any of these conditions...</h3>
+						  <ul style="margin:0 0 0 20px;font-family:Cambria;font-size:12px;">
+                <li>cold / fever in the past 1 week.</li>
+                <li>under treatment with antibiotics or any other medication.</li>
+                <li>cardiac problems, hypertension, epilepsy, diabetes (on insulin therapy), history of cancer,chronic kidney or liver disease, bleeding tendencies, venereal disease etc.</li>
+                <li>major surgery in the last 6 months.</li>
+                <li>vaccination in the last 24 hours.</li>
+                <li>had a miscarriage in the last 6 months or have been pregnant / lactating in the last one year.</li>
+                <li>had fainting attacks during last donation.</li>
+                <li>have regularly received treatment with blood products.</li>
+                <li>shared a needle to inject drugs/ have history of drug addiction.</li>
+                <li>had sexual relations with different partners or with a high risk individual.</li>
+                <li>been tested positive for antibodies to HIV.</li>
+               
+            </ul>
+            <p><strong>Pregnancy And Menstrual Cycle</strong></p>
+            <ul style="margin:0 0 0 20px;font-family:Cambria;font-size:12px;">
+                <li>Females should not donate blood during pregnancy.</li>
+                <li>They can donate after 6 weeks following a normal delivery and when they are not breast feeding.</li>
+                <li>Females should not donate blood if they are having heavy menstrual flow or menstrual cramps.</li>
+                
+            </ul>
+
+
+					       </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingThree">
+					      <h4 class="panel-title">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Blood Donation Facts
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					      <div class="panel-body">
+						 <p><strong> Facts about blood needs:</strong></p>
+						  <ul style="margin:0 0 0 20px;font-family:Cambria;font-size:12px;">
+                              <li>Every year our nation requires about 1 Crore units of blood, out of which only a meager 60 Lakh units of blood are available.</li>
+                              <li>The gift of blood is the gift of life. There is no substitute for human blood.</li>
+                              <li>Every two seconds someone needs blood.</li>                
+                              <li>The average red blood cell transfusion is approximately 3 pints.</li>
+                              <li>The blood type most often requested by hospitals is Type B.</li>
+                              <li>Sickle cell patients can require frequent blood transfusions throughout their lives.</li>
+                              <li>More than 1 million new people are diagnosed with cancer each year. Many of them will need blood, sometimes daily, during their chemotherapy treatment.</li>
+                              <li>A single car accident victim can require as many as 100 units of blood</li>
+							  <li>Blood cannot be manufactured – it can only come from generous donors.</li>
+                              <li>Type O-negative blood (red cells) can be transfused to patients of all blood types. It is always in great demand and often in short supply.</li>
+                              <li>Type AB-positive plasma can be transfused to patients of all other blood types. AB plasma is also usually in short supply.</li>        
+                         </ul>
+                         <p><strong>Facts about the blood donation process:</strong></p>
+						 <ul style="margin:0 0 0 20px;font-family:Cambria;font-size:12px;">
+                              <li>Donating blood is a safe process. A sterile needle is used only once for each donor and then discarded.</li>
+                              <li>Blood donation is a simple four-step process: registration, medical history and mini-physical, donation and refreshments.</li>
+                              <li>Every blood donor is given a mini-physical, checking the donor's temperature, blood pressure, pulse and hemoglobin to ensure it is safe for the donor to give blood.</li>                
+                              <li>The actual blood donation typically takes less than 10-12 minutes. The entire process, from the time you arrive to the time you leave, takes about an hour and 15 min.</li>
+                              <li>The average adult has about 10 units of blood in his body. Roughly 1 unit is given during a donation.</li>
+                              <li>A healthy donor may donate red blood cells every 56 days, or double red cells every 112 days.</li>
+                              <li>A healthy donor may donate platelets as few as 7 days apart, but a maximum of 24 times a year.</li>
+                              <li>All donated blood is tested for HIV, hepatitis B and C, syphilis and other infectious diseases before it can be transfused to patients.</li>
+                         </ul>
+
+					       </div>
+					    </div>
+					  </div>
+					</div>
+
+					
+
+
+				
+				</div>
+			</div>
+
+		</div>
+
+		
+
+		
+
+
+	</div> <!-- /.main-container  -->
+
+
+    <footer class="main-footer">
+
+        <div class="footer-top">
+            
+        </div>
+
+
+        <div class="footer-main">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">About us <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+                                <p>
+                                    
+                               <strong>My Blood Bank</strong> (MBB) provide you the access to any blood group required by the patients suffering from some disease or some accident. You can donate your blood to help the needies to recover soon simply by signing up and filling your details and your contact information. You can also get specific blood group if in stock. 
+                                </p> 
+
+                                <p>
+                                    We aim at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better way.
+                                   
+                                </p>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title"> The stories which will inspire you <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+                                <ul class="tweets list-unstyled">
+                                    <li class="tweet"> 
+
+                                       Hi Friends!  I Am Ramesh and a B- Blood Donor. I Have Donated Blood Two Times.First Time in an Accident Case In Igmc Shimla And 2nd Time to a Thallessaemia patient.I Felt Proud To Help A Needy And Saved A Precious Life. So Dear Friends Share A Little, Care A Little – Donate Blood.
+
+                                    </li>
+
+                                    <li class="tweet"> 
+
+                                        Hello, My Name Is Suresh Kumar. I Am Working As JBT At Sarkaghat, Mandi. I Am Regular And Volunteer Donor . I Have Donated Blood 59 Times And Committed That I Will Continue It Till My Last. It Gives Me Immense Pleasure And Self Satisfaction. Friends There Is No Substitute Of Blood Only Generous Donors Can Save A Needy Patients.
+
+                                    </li>
+
+                                    <li class="tweet"> 
+ I Am An Educated Member Of Society And I Believe We All Should Donate Blood As Much We Can.So It Is My Request To All My Friends To Come Forward To Help Others And Trust Me There Is No Effect On Health .Even I'm Filled With Tremendous Amount Of Positivity As I Have Donated My Blood 16 Times And I Will Continue This Till My Last Breath.
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">Contact us <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+
+                                <div class="footer-form" >
+                                    
+                                    <form action="php/mail.php" class="ajax-form">
+
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                        </div>
+
+                                         <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                        </div>
+
+                                        <div class="form-group alerts">
+                        
+                                            <div class="alert alert-success" role="alert">
+                                              
+                                            </div>
+
+                                            <div class="alert alert-danger" role="alert">
+                                              
+                                            </div>
+                                            
+                                        </div>
+
+                                         <div class="form-group">
+                                            <button type="submit" class="btn btn-submit pull-right">Send message</button>
+                                        </div>
+                                        
+                                    </form>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+
+
+
+                </div>
+                
+                
+            </div>
+
+            
+        </div>
+
+        
+        
+    </footer>
+
+
+
+
+       
+        
+          
+         <!-- jQuery -->
+       <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Bootsrap javascript file -->
+    <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js')}}"></script>
+    
+        <!-- PrettyPhoto javascript file -->
+        <script src= "{{ url_for('static',filename='assets/js/jquery.prettyPhoto.js')}}"></script>
+
+
+
+        
+<!-- Template main javascript -->
+    <script src= "{{ url_for('static',filename='assets/js/main.js')}}"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
+
